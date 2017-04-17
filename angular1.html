@@ -8,9 +8,26 @@
     </script>
   </head>
   <body>
-    <div ng-app="">
-      <p>My First Expression {{5+5}}</p>
+    <div ng-app="myApp">
+      <p>First Name : <input type="text" ng-model="firstName"></p>
+      <p>Last Name  : <input type="text" ng-model="lastName"></p>
+      <p>{{firstName + " "+ lastName}}</p>
     </div>
+
+    <!--Creating Module and Controller-->
+
+    <script type="text/javascript">
+
+    var app=angular.module('myApp',[]); // creating a module
+
+    // creating a controller
+    app.controller('',function()
+    {
+      $scope.firstName='Manoj';
+      $scope.lastName='Kumar';
+  });
+
+    </script>
 
   </body>
 </html>
