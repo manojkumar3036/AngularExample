@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<!-- <script type="text/javascript" src="public/js/angular.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script type="text/javascript" src="public/js/app.js"></script>
+<script type="text/javascript" src="controller/homecontroller.js"></script>
+
+
+
+  </head>
+  <body ng-app="mkApp">
+    <ul>
+      <li><a  href="#about">About Us</a></li>
+      <li><a  href="#contact">Contact Us</a></li>
+    </ul>
+    <div ng-view> </div>
+
+  </body>
+
+  <!-- <script type="text/javascript">
+  var app=angular.module('mkApp',['ngRoute']);
+  app.config(function($routeProvider)
+  {
+    $routeProvider
+    .when("/about",{
+      templateUrl:"/views/about.html",
+      controller:"homeController"
+
+    })
+    .when("/contact",{
+      templateUrl:"/views/contact.html",
+      controller:"homeController"
+
+    });
+
+  });
+
+  app.controller('homeController',function(){
+
+  });
+
+  </script> -->
+
+</html>
